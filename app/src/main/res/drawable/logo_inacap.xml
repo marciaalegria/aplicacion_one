@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Fondo redondeado suave -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M16,0 L80,0 A16,16 0 0,1 96,16 L96,80 A16,16 0 0,1 80,96 L16,96 A16,16 0 0,1 0,80 L0,16 A16,16 0 0,1 16,0 Z" />
+
+    <!-- Franja de acento inferior blanca/gris -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,76 L84,76 L84,82 L12,82 Z" />
+
+    <!-- Representación estilizada de las letras/símbolo de INACAP -->
+    <!-- 'I' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M18,24 L28,24 L28,68 L18,68 Z" />
+
+    <!-- 'N' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,24 L42,24 L54,54 L54,24 L62,24 L62,68 L54,68 L42,38 L42,68 L34,68 Z" />
+
+    <!-- Acento / Chevrón representativo -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M68,24 L78,24 L78,68 L68,68 Z" />
+</vector>

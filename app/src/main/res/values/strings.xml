@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mi Primera Aplicación</string>
+    <string name="titulo_login">Iniciar sesión</string>
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="chk_recordarme">Recordarme</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="desc_logo_inacap">Logo corporativo INACAP</string>
+    <string name="desc_mostrar_password">Alternar visibilidad de contraseña</string>
+    <string name="btn_preferencias">Configuración / Preferencias</string>
+    <string name="titulo_preferencias">Preferencias de Usuario</string>
+    <string name="sw_notificaciones">Recibir notificaciones</string>
+    <string name="label_idioma">Idioma preferido:</string>
+
+    <!-- Array de idiomas solicitado en Bloque 3 -->
+    <string-array name="idiomas">
+        <item>Español</item>
+        <item>Inglés</item>
+        <item>Italiano</item>
+        <item>Portugues</item>
+    </string-array>
+</resources>

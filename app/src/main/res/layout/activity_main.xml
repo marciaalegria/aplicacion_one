@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout principal para la pantalla de inicio de sesión (MainActivity) -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- 1. Logo corporativo INACAP centrado superiormente (96x96dp) -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/desc_logo_inacap"
+        android:src="@drawable/logo_inacap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 2. Título "Iniciar sesión", 24sp, negrita, posicionado bajo el logo -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/titulo_login"
+        android:textColor="#212121"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+    <!-- 3. Campo de entrada de usuario con hint="Usuario" y ancho en 0dp (match_constraints) -->
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="emailAddress"
+        android:hint="@string/hint_usuario"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo" />
+
+    <!-- 4. Campo de contraseña con hint="Contraseña" y type password -->
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="password"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@id/btnMostrarPassword"
+        app:layout_constraintStart_toStartOf="@id/edtUsuario"
+        app:layout_constraintTop_toBottomOf="@id/edtUsuario" />
+
+    <!-- 5. ImageButton para alternar visibilidad de la contraseña con fondo transparente -->
+    <ImageButton
+        android:id="@+id/btnMostrarPassword"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/desc_mostrar_password"
+        android:onClick="onMostrarPasswordClick"
+        android:src="@drawable/ic_visibility_24"
+        app:layout_constraintBottom_toBottomOf="@id/edtPassword"
+        app:layout_constraintEnd_toEndOf="@id/edtUsuario"
+        app:layout_constraintTop_toTopOf="@id/edtPassword" />
+
+    <!-- 6. Casilla de verificación para recordar credenciales -->
+    <CheckBox
+        android:id="@+id/chkRecordarme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:minHeight="48dp"
+        android:text="@string/chk_recordarme"
+        app:layout_constraintStart_toStartOf="@id/edtUsuario"
+        app:layout_constraintTop_toBottomOf="@id/edtPassword" />
+
+    <!-- 7. Botón principal de acceso con ancho expandido y onClick hacia onIngresarClick -->
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onIngresarClick"
+        android:text="@string/btn_ingresar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/edtUsuario"
+        app:layout_constraintStart_toStartOf="@id/edtUsuario"
+        app:layout_constraintTop_toBottomOf="@id/chkRecordarme" />
+
+    <!-- 8. Botón secundario de limpieza con fondo rojo (#FF0000) y onClick hacia onLimpiarClick -->
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="onLimpiarClick"
+        android:text="@string/btn_limpiar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/btnIngresar"
+        app:layout_constraintStart_toStartOf="@id/btnIngresar"
+        app:layout_constraintTop_toBottomOf="@id/btnIngresar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Aplicacion_one" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores primarios y secundarios -->
+        <item name="colorPrimary">#D32F2F</item>
+        <item name="colorPrimaryVariant">#B71C1C</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#1976D2</item>
+        <item name="colorSecondaryVariant">#0D47A1</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+    </style>
+</resources>
