@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169438491983",
+    "project_id": "alerta-temperatura-bodega",
+    "storage_bucket": "alerta-temperatura-bodega.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169438491983:android:739074a2cc11ecd679813a",
+        "android_client_info": {
+          "package_name": "com.example.aplicacion_one"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqGhtZ6v7eM-DKdQSvY2CgoJVievvpmKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

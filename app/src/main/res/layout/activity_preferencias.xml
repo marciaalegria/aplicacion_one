@@ -40,7 +40,9 @@
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:text="@string/sw_notificaciones"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textOn="ON"
+            android:textOff="OFF" />
 
         <!-- Etiqueta para el selector de idioma -->
         <TextView
